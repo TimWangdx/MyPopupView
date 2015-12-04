@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "TWPopMenuView.h"
 
-@interface ViewController ()
+@interface ViewController ()<TWPopMenuDelegate>
 
 @end
 
@@ -22,6 +23,22 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)btnClicked:(UIButton *)sender {
+    [self btn];
+}
+
+- (void)btn
+{
+    // 弹出菜单
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    button.backgroundColor = [UIColor blueColor];
+    
+    TWPopMenuView *menu = [[TWPopMenuView alloc ] initWithContentView:nil];
+    menu.delegate = self;
+    menu.arrowPosition = TWPopMenuArrowPositionCenter;
+    menu.dimBackground = YES;
+    [menu showInRect:CGRectMake(100, 64, 200, 480)];
 }
 
 @end

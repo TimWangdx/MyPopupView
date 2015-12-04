@@ -15,6 +15,10 @@
 		21B833ED1C0EDBDC006DF1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B833EB1C0EDBDC006DF1E8 /* LaunchScreen.storyboard */; };
 		21B833F81C0EDBDC006DF1E8 /* MyPopupViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B833F71C0EDBDC006DF1E8 /* MyPopupViewTests.m */; };
 		21B834031C0EDBDC006DF1E8 /* MyPopupViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B834021C0EDBDC006DF1E8 /* MyPopupViewUITests.m */; };
+		21B834131C0EDC54006DF1E8 /* HMPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B834121C0EDC54006DF1E8 /* HMPopMenu.m */; };
+		21B834161C0EDCA7006DF1E8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B834151C0EDCA7006DF1E8 /* UIView+Extension.m */; };
+		21B8341D1C0EDEBE006DF1E8 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B8341C1C0EDEBE006DF1E8 /* UIImage+Extension.m */; };
+		21B834201C0EDFD0006DF1E8 /* TWPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B8341F1C0EDFD0006DF1E8 /* TWPopMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		21B833FE1C0EDBDC006DF1E8 /* MyPopupViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPopupViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B834021C0EDBDC006DF1E8 /* MyPopupViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPopupViewUITests.m; sourceTree = "<group>"; };
 		21B834041C0EDBDC006DF1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B834111C0EDC54006DF1E8 /* HMPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPopMenu.h; sourceTree = "<group>"; };
+		21B834121C0EDC54006DF1E8 /* HMPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPopMenu.m; sourceTree = "<group>"; };
+		21B834141C0EDCA7006DF1E8 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		21B834151C0EDCA7006DF1E8 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		21B8341B1C0EDEBE006DF1E8 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		21B8341C1C0EDEBE006DF1E8 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		21B8341E1C0EDFD0006DF1E8 /* TWPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPopMenuView.h; sourceTree = "<group>"; };
+		21B8341F1C0EDFD0006DF1E8 /* TWPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPopMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,8 @@
 		21B833DC1C0EDBDC006DF1E8 /* MyPopupView */ = {
 			isa = PBXGroup;
 			children = (
+				21B834171C0EDE59006DF1E8 /* Category */,
+				21B834101C0EDC4C006DF1E8 /* Classes */,
 				21B833E01C0EDBDC006DF1E8 /* AppDelegate.h */,
 				21B833E11C0EDBDC006DF1E8 /* AppDelegate.m */,
 				21B833E31C0EDBDC006DF1E8 /* ViewController.h */,
@@ -138,6 +152,28 @@
 				21B834041C0EDBDC006DF1E8 /* Info.plist */,
 			);
 			path = MyPopupViewUITests;
+			sourceTree = "<group>";
+		};
+		21B834101C0EDC4C006DF1E8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				21B834111C0EDC54006DF1E8 /* HMPopMenu.h */,
+				21B834121C0EDC54006DF1E8 /* HMPopMenu.m */,
+				21B8341E1C0EDFD0006DF1E8 /* TWPopMenuView.h */,
+				21B8341F1C0EDFD0006DF1E8 /* TWPopMenuView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		21B834171C0EDE59006DF1E8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				21B834141C0EDCA7006DF1E8 /* UIView+Extension.h */,
+				21B834151C0EDCA7006DF1E8 /* UIView+Extension.m */,
+				21B8341B1C0EDEBE006DF1E8 /* UIImage+Extension.h */,
+				21B8341C1C0EDEBE006DF1E8 /* UIImage+Extension.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B834161C0EDCA7006DF1E8 /* UIView+Extension.m in Sources */,
 				21B833E51C0EDBDC006DF1E8 /* ViewController.m in Sources */,
+				21B834201C0EDFD0006DF1E8 /* TWPopMenuView.m in Sources */,
 				21B833E21C0EDBDC006DF1E8 /* AppDelegate.m in Sources */,
+				21B8341D1C0EDEBE006DF1E8 /* UIImage+Extension.m in Sources */,
 				21B833DF1C0EDBDC006DF1E8 /* main.m in Sources */,
+				21B834131C0EDC54006DF1E8 /* HMPopMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
